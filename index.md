@@ -1,6 +1,6 @@
 
 # Description of the Web Service CHYTRÁ DISTRIBUCE  
-### Version 1.1 (April 26, 2024)  
+### Version 1.2 (June 23, 2026)  
 
 **Purpose:** The API service is designed for processing CHYTRÁ DISTRIBUCE orders.  
 **Author:** Karel Větrovský (it@chytradistribuce.cz)  
@@ -286,6 +286,92 @@ Where:
 - `CODE` is the 11-digit parcel number assigned to the shipment.  
 
 ---
+
+# ANNEX 1:  Terminal Status Codes
+
+| ID | Description |
+|----|-------------|
+| 0 | Order entered |
+| 1 | Order processed |
+| 5 | Status information |
+| 50 | Estimated delivery |
+| 70 | Manifest scan |
+| 71 | Courier phone |
+| 72 | COD document scan (dispatch center) |
+| 73 | Cancellation of COD document scan |
+| 80 | Cancelled |
+| 81 | Order reactivated |
+| 100 | Received at supplier |
+| 101 | Missing at supplier |
+| 105 | Additional receiving information |
+| 106 | Shipment dimensions |
+| 113 | Additional receiving photo |
+| 114 | Updated size (XL) |
+| 130 | Received (without scanning) |
+| 150 | Collection completed + number of items |
+| 181 | Receipt of deleted code at supplier |
+| 200 | Passed through depot |
+| 201 | Missing at depot |
+| 205 | Additional depot information |
+| 214 | Updated size (XL) |
+| 230 | Passed through depot (without scan) |
+| 250 | Depot scanning completed |
+| 260 | Misrouted at depot |
+| 300 | Loaded for delivery |
+| 301 | Missing during delivery |
+| 302 | Capacity exceeded |
+| 303 | Size exceeded |
+| 304 | Weight exceeded |
+| 305 | Additional delivery information |
+| 310 | Unscheduled return entered |
+| 313 | Loading photo documentation |
+| 314 | Updated size (XL) |
+| 320 | Unscheduled return entered |
+| 325 | Shipment loaded after failed delivery |
+| 330 | Loaded without scanning |
+| 350 | Loading completed |
+| 360 | Route misrouting |
+| 361 | Unsuitable delivery route |
+| 370 | Damaged – returned to supplier |
+| 400 | Delivered to customer |
+| 402 | Undelivered due to insufficient cash (redelivery agreed) |
+| 403 | Customer unavailable at delivery |
+| 404 | Refused upon delivery |
+| 405 | Additional delivery information |
+| 406 | File attached |
+| 410 | Alternative delivery date arranged |
+| 411 | Partially delivered |
+| 412 | Recipient's digital signature |
+| 413 | Delivery photo documentation |
+| 414 | Geo location + latitude + longitude |
+| 415 | Name of receiving person |
+| 420 | Undeliverable – returned |
+| 421 | Undelivered – incorrect address |
+| 430 | Delivered to customer (without scan) |
+| 440 | Moved to afternoon delivery route |
+| 450 | Delivery route completed + number of items |
+| 460 | Delivery route misrouting |
+| 461 | Unsuitable delivery route |
+| 600 | Receipt of scheduled return |
+| 601 | Missing |
+| 602 | Capacity exceeded |
+| 603 | Customer unavailable |
+| 604 | Refused by customer |
+| 605 | Information + note |
+| 610 | Unscheduled return entered (selected address) |
+| 613 | Receipt photo documentation |
+| 614 | Size set |
+| 620 | Unscheduled return entered (manual address) |
+| 621 | Unscheduled return entered in supplier/customer format |
+| 630 | Receipt of scheduled return without scanning |
+| 660 | Return misrouting |
+| 680 | Undelivered – other reason |
+| 700 | Return handed over to depot |
+| 800 | Return issued |
+| 801 | Return issued with assignment |
+| 804 | Return issue refused/cancelled |
+| 999 | Lost |
+
 
 End of Document
 
